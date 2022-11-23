@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:background="@drawable/ic_wave__2_"
+        android:rotationX="180">
+
+    </View>
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/card_avt"
+        app:cardCornerRadius="20dp"
+        android:layout_margin="20dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/img_avtItem"
+            android:src="@drawable/cay"/>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/card_avt"
+        android:layout_centerVertical="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten"
+            android:textSize="20sp"
+            android:textColor="#e74c3c"
+            android:id="@+id/Ten"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ten Thường gọi "
+            android:textSize="18sp"
+            android:id="@+id/tenTG"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bộ phận dùng"
+            android:textSize="20sp"
+            android:textColor="#2ecc71"
+            android:id="@+id/boPhanDung"/>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
